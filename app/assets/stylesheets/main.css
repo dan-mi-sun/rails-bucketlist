@@ -1,26 +1,31 @@
 html, body {
+  background: url('background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100%;
+  opacity: 0.9;
 }
 
-body {background-image: -webkit-gradient(
-  linear,
-  left top,
-  left bottom,
-  color-stop(0, #AA0E93),
-  color-stop(0.35, #E08BD3)
-  );
-  background-image: -o-linear-gradient(bottom, #AA0E93 0%, #E08BD3 35%);
-  background-image: -moz-linear-gradient(bottom, #AA0E93 0%, #E08BD3 35%);
-  background-image: -webkit-linear-gradient(bottom, #AA0E93 0%, #E08BD3 35%);
-  background-image: -ms-linear-gradient(bottom, #AA0E93 0%, #E08BD3 35%);
-  background-image: linear-gradient(to bottom, #AA0E93 0%, #E08BD3 35%);
+body {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+#section {
+  background-color: white;
+  padding: 10px 10px 10px 10px;
+  margin: 10px;
+  border-style: dotted;
+  border-width: 1px;
+  width: 33%;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.25em;
+  font-weight: bold;
 }
