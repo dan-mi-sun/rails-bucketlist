@@ -4,6 +4,10 @@ class DestinationsController < ApplicationController
 
   before_filter :load_one_destination, :only => :show
 
+  def index
+    @destination = Destination.new
+  end
+
   def create
     @destination = Destination.new(allowed_params)
     if @destination.save

@@ -1,6 +1,23 @@
-<div class="destination">
+<div id="bucket_list">
   <h3><%= render @destinations %></h3>
 
-  <p>I only have to change this one file</p>
-</div>
+  <div class="add-destination">
+    <%= link_to "Add Destination", "#"%>
+  </div>
 
+  <div class="modal"> 
+    <%= form_for @destination do |f|  %>
+      <%= field_set_tag do %>
+      <%= f.label :name %>
+    <%= f.text_field :name %>
+  <% end %>
+
+    <%= field_set_tag do %>
+      <%= f.label :image_url,"Image Url"%>
+      <%= f.text_field :image_url %>
+  <% end %>
+
+    <%= f.submit "Create Destination" %>
+  <% end %>
+  </div>
+</div>
