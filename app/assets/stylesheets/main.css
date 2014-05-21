@@ -1,0 +1,18 @@
+html, body {
+  height: 100%;
+}
+
+body {background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #AA0E93),
+  color-stop(0.35, #E08BD3)
+  );
+  background-image: -o-linear-gradient(bottom, #AA0E93 0%, #E08BD3 35%);
+  background-image: -moz-linear-gradient(bottom, #AA0E93 0%, #E08BD3 35%);
+  background-image: -webkit-linear-gradient(bottom, #AA0E93 0%, #E08BD3 35%);
+  background-image: -ms-linear-gradient(bottom, #AA0E93 0%, #E08BD3 35%);
+  background-image: linear-gradient(to bottom, #AA0E93 0%, #E08BD3 35%);
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}

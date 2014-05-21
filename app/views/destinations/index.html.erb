@@ -1,3 +1,6 @@
-<% @destinations.each do |destination| %>
-<%= render :partial => "destinations/destination", :locals => { :destination => destination } %>
-<% end %>
+<div class="destination">
+  <h3><%= render @destinations %></h3>
+
+  <p>I only have to change this one file</p>
+</div>
+
