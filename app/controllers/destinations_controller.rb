@@ -15,7 +15,7 @@ class DestinationsController < ApplicationController
 
   private
   def allowed_params
-    params.require(:destination).permit(:name)
+    params.require(:destination).permit(:name, :image_url)
   end
 
   def load_all_destinations
