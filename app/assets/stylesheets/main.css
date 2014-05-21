@@ -16,3 +16,11 @@ body {background-image: -webkit-gradient(
   background-image: linear-gradient(to bottom, #AA0E93 0%, #E08BD3 35%);
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
+
+h1 {
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
