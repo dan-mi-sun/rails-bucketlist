@@ -1,6 +1,15 @@
 // Place all the styles related to the Destinations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#destination {
-  padding: 10px;
+.destination-wrap {
+  position: relative;
+  border-style: dotted;
+  border-width: 1px;
+  background-color: yellow;
+  padding: 5px;
+}
+
+.img-destination {
+  max-width: 200px;
+  max-height: 300px;
 }
