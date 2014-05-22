@@ -11,7 +11,12 @@ class DestinationsController < ApplicationController
   def create
     @destination = Destination.new(allowed_params)
     if @destination.save
-      redirect_to destination_path(@destination), :notice => "Record Saved"
+      respond_to do |format|
+        format.html { redirect_to destination_path(@destination), :notice => "Record Saved"}
+        format.js {
+        }
+      end
+
     else
       render :new
     end

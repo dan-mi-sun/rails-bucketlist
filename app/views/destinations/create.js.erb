@@ -1,0 +1,7 @@
+console.log("This is <%= Time.now %> ");
+// This is what we were previously doing in the success callback in the destinations.js
+$('#destinations').append("<%= j(render @destination)%>");
+
+//("<#%= j(render :partial => 'destinations/destination', :locals => { :destinations => @destination }) %>");
+
+  // (render @destination) <- this is a short version of the partial in ruby
