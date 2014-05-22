@@ -19,5 +19,5 @@ end
 Then(/^I should see my new destination$/) do
   save_and_open_page
   expect(page.has_content?(@country)).to be true
-  expect(page.has_css?('img.destination[src="http://upload.wikimedia.org/wikipedia/commons/2/26/YellowLabradorLooking_new.jpg"]')).to be true
+  expect(page.has_css?('img.img-destination[src="http://upload.wikimedia.org/wikipedia/commons/2/26/YellowLabradorLooking_new.jpg"]')).to be true
 end
