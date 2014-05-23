@@ -8,6 +8,6 @@ class ToDoItem < ActiveRecord::Base
   after_validation :geocode 
 
   def geocode_input
-    "#{location}, #{destination.title}"
+    "#{location}, #{destination.name}"
   end
 end
