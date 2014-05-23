@@ -1,8 +1,12 @@
+<div id="wrapper">
 <div id="bucket_list">
 
   <div id="destinations">
     <h3><%= render @destinations %></h3>
   </div>
+
+  <section id="insert-todo">
+  </section>
 
   <div class="add-destination">
     <%= link_to "Add Destination", "#"%>
@@ -23,4 +27,8 @@
     <%= f.submit "Create Destination" %>
   <% end %>
   </div>
+</div>
+
+<section id="map-canvas">
+</section>
 </div>
