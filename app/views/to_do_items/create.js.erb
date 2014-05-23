@@ -1,1 +1,4 @@
-$('#insert-todo').append("<%= j () %>");
+console.log("The time now is <%= Time.now %>")
+$('#destinations').append("<%= j (render :partial => 'destinations/destination', :locals => {:destinations => @destination}) %>");
+
+addMarker(<%= @to_do_item.latitude %>, <%= @to_do_item.longitude %> );

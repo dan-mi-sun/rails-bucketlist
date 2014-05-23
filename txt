@@ -1,0 +1,12 @@
+google.maps
+Object {__gjsload__: function, Animation: Object, Circle: function, ControlPosition: Object, Data: function…}
+options = {}
+Object {}
+options.centre = new google.maps.LatLng(-51,0)
+P {k: -51, A: 0, toString: function, j: function, equals: function…}
+options.zoom =15
+15
+options
+Object {centre: P, zoom: 15}
+map = new google.maps.Map($('#map-canvas')[0], options)
+Zl {gm_accessors_: Object, centre: P, gm_bindings_: Object, zoom: 15, mapTypeId: "roadmap"…}
