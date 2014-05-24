@@ -18,7 +18,6 @@ When(/^I submit the todo form$/) do
 end
 
 Then(/^I should see my new todo item listed as activity under "(.*?)"$/) do |name|
-  save_and_open_page
   expect(page.has_content?(@title)).to be true
   expect(page.has_content?(@description)).to be true
 end
