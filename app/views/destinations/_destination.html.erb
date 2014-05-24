@@ -20,6 +20,11 @@
     <%= f.text_field :description %>
   <% end %>
 
+    <%= field_set_tag do %>
+      <%= f.label :location %>
+    <%= f.text_field :location %>
+  <% end %>
+
     <%= f.hidden_field :destination_id %>
 
     <%= f.submit "Create To Do Item" %>

@@ -9,7 +9,7 @@ class ToDoItemsController < ApplicationController
 
   private
   def allowed_params
-    params.require(:to_do_item).permit(:title, :description, :destination_id)
+    params.require(:to_do_item).permit(:title, :description, :destination_id, :location)
   end
 
 end
