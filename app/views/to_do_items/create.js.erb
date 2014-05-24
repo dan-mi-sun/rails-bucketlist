@@ -1,4 +1,3 @@
-console.log("The time now is <%= Time.now %>")
-$('#destinations').append("<%= j (render :partial => 'destinations/destination', :locals => {:destinations => @destination}) %>");
+$('#to-do-items-<%=@to_do_item.destination.id%>').append("<%= j ( render @to_do_item ) %>");
 
 addMarker(<%= @to_do_item.latitude %>, <%= @to_do_item.longitude %> );

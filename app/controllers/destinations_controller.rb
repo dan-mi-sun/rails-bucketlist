@@ -13,8 +13,7 @@ class DestinationsController < ApplicationController
     if @destination.save
       respond_to do |format|
         format.html { redirect_to destination_path(@destination), :notice => "Record Saved"}
-        format.js {
-        }
+        format.js 
       end
 
     else

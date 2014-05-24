@@ -3,7 +3,7 @@ Given(/^an exciting destination called "(.*?)"$/) do |name|
 end
 
 When(/^I select "(.*?)"$/) do |name|
-  click_button name 
+  click_link name 
 end
 
 When(/^I fill in the description of the todo item$/) do
@@ -11,6 +11,10 @@ When(/^I fill in the description of the todo item$/) do
   @description = Faker::Company.bs
   fill_in "Title", :with => @title
   fill_in "Description", :with => @description 
+end
+
+When(/^I submit the todo form$/) do
+
 end
 
 Then(/^I should see my new todo item listed as activity under "(.*?)"$/) do |name|

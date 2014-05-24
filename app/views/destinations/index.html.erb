@@ -2,18 +2,21 @@
 <div id="bucket_list">
 
   <div id="destinations">
-    <h3><%= render @destinations %></h3>
+    <% @destinations.each do |destination| %>
+      <%= render :partial => "destinations/destination", :locals => { :destination => destination } %>
+      <% end %>
   </div>
-
-  <section id="insert-todo">
-  </section>
 
   <div class="add-destination">
     <%= link_to "Add Destination", "#"%>
   </div>
 
+  <div class="add-todo">
+    <%= link_to "Add To Do Item ", "#"%>
+  </div>
+
   <div class="modal"> 
-    <%= form_for @destination, :remote => true do |f|  %>
+    <%= form_for @destination, :remote => true, :authenticity_token => true do |f|  %>
       <%= field_set_tag do %>
       <%= f.label :name %>
     <%= f.text_field :name %>
@@ -25,7 +28,6 @@
   <% end %>
 
     <%= f.submit "Create Destination" %>
-    <%= f.submit "Add To Do Item" %>
   <% end %>
 </div>
 
