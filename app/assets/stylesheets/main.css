@@ -9,16 +9,23 @@ body {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
+#wrapper {
+  position: absolute;
+  width: 100%;
+}
+
 #section {
+  position: relative;
   background-color: white;
+  width: 38%;
   padding: 10px 10px 10px 10px;
   margin: 10px;
   border-style: dotted;
   border-width: 1px;
-  width: 33%;
+  float: left;
 }
 
-#wrapper {
+#bucket_list {
 }
 
 h1 {

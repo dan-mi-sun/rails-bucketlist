@@ -2,11 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .destination-wrap {
+  position: relative;
   border-style: dotted;
   border-width: 1px;
   padding: 5px;
 }
 
 .img-destination {
-  height: 50px;
+  width: 100%;
 }
