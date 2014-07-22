@@ -1,4 +1,5 @@
 class ToDoItem < ActiveRecord::Base
+
   validates :title, :presence => true
   validates :location, :presence => true
 
